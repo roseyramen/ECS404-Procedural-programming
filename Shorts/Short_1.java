@@ -1,0 +1,93 @@
+import java.util.Scanner; // Needed to make Scanner available if run outside JHUB
+
+class big_initals
+{
+
+    // this program will print the second initial
+    public static void initial_1(String intial)
+{
+    if (intial.equals("R"))
+    {
+        System.out.println("RRR");
+        System.out.println("R   R");
+        System.out.println("R    R");
+        System.out.println("R   R");
+        System.out.println("RRRR");
+        System.out.println("RRRRR");
+        System.out.println("R   R");
+        System.out.println("R    R");
+        System.out.println("");
+    }//end initial_1
+
+    return;
+}
+
+// this program will print the second intital
+    public static void initial_2(String intial)
+{
+    if (intial.equals("R"))
+    {
+        System.out.println("RRR");
+        System.out.println("R   R");
+        System.out.println("R    R");
+        System.out.println("R   R");
+        System.out.println("RRRR");
+        System.out.println("RRRRR");
+        System.out.println("R   R");
+        System.out.println("R    R");
+        System.out.println("");
+    }//end initial_2
+
+    return;
+}
+//this program will ask the user for their inital and then take in return whats put in to the main program
+public static String input_1(String message)
+{
+    Scanner scanner = new Scanner(System.in);
+
+    System.out.println(message);
+    String Initial = scanner.nextLine();
+
+    return Initial;
+} //end of input_initial
+
+// THIS TESTS THE METHOD INITIAL_R
+public static void test_1()
+{
+    initial_first("R");
+    initial_second("R");
+    return;
+    
+}//END OF TEST_1
+
+//this method tests both input inital
+public static void test_2()
+{
+    String message = "this is a test, please input";
+    String test_value =input_inital(message);
+
+    System.out.println("here was the inputted value " + test_value);
+
+    return;
+    
+}//end test_2
+
+
+// this is the main thing where all the previous two methods are called on.
+public static void main(String[] args)
+
+
+    String message = "what is your first initial?";
+    String initial_1 = input_inital(message);
+    
+    message = "whats your second inital?";
+    String initial_2 = input_inital(message);
+
+    initial_1(initial_1);
+    initial_2(initial_2);
+
+    return;
+
+}// end of main
+
+} // END big_initials
